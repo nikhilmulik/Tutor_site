@@ -7,6 +7,7 @@ import simplejson
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def cover():
     return render_template('content.html')
