@@ -1,16 +1,21 @@
 {% extends "index.html" %}
 {% block body %}
 
-    <header>
-        <div class="header-content">
+    <header style="width: 100%; overflow: hidden;">
+        <div class="header-content" style="width: 60%;float: left;">
             <div class="header-content-inner">
-                <h1 id="homeHeading" style="text-shadow: 0px 0px 210px #000000;">Learn Python the easy way...</h1>
+                <h1 id="homeHeading" style="text-shadow: 0px 0px 210px #000000;">Learn Python the easy way</h1>
                 <hr>
                 <p style="    text-shadow: 0px 0px 20px #000000; color: white;">Learn how to write a API, backend scripts, build websites and web-apps from scratch using Python</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">View Curriculum</a>
             </div>
         </div>
+        <div style="width: 50%;float: right;">
+            <img src="\static\img\job_trend.jpg" alt="View" style="width: 81%; margin: 27% 0% 0% 0;">
+        </div>
+
     </header>
+
 
 
     <section class="bg-primary" id="about">
@@ -34,49 +39,84 @@
 
     <section id="services">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Keep track of all your favorite </h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Gift Cards</h3>
-                        <p class="text-muted">Send friends and family an Gift Card from your device or computer.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Family Sharing</h3>
-                        <p class="text-muted">Family Sharing makes it easy for up to six people in your family. </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>Daily News</h3>
-                        <p class="text-muted"> Information about the Python conference scene</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Today's Best</h3>
-                        <p class="text-muted">Maintenance releases for the 3.6 series will follow at regular intervals starting in the first quarter of 2017.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+{#            <div class="row">#}
+{#                <div class="col-lg-12 text-center">#}
+{#                    <h2 class="section-heading">Check out our other learning Courses </h2>#}
+{#                    <hr class="primary">#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="container">#}
+{#            <div class="row">#}
+{#                <div class="col-lg-3 col-md-6 text-center">#}
+{#                    <div class="service-box">#}
+{#                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>#}
+{#                        <h3>Gift Cards</h3>#}
+{#                        <p class="text-muted">Send friends and family an Gift Card from your device or computer.</p>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-lg-3 col-md-6 text-center">#}
+{#                    <div class="service-box">#}
+{#                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>#}
+{#                        <h3>Family Sharing</h3>#}
+{#                        <p class="text-muted">Family Sharing makes it easy for up to six people in your family. </p>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-lg-3 col-md-6 text-center">#}
+{#                    <div class="service-box">#}
+{#                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>#}
+{#                        <h3>Daily News</h3>#}
+{#                        <p class="text-muted"> Information about the Python conference scene</p>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-lg-3 col-md-6 text-center">#}
+{#                    <div class="service-box">#}
+{#                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>#}
+{#                        <h3>Today's Best</h3>#}
+{#                        <p class="text-muted">Maintenance releases for the 3.6 series will follow at regular intervals starting in the first quarter of 2017.</p>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
 
 
+
+
+            <div class="row">
+                <div class="col-md-4" style="padding: 5px 30px 0px 6%;">
+                    <div class="card">
+                        <img src="\static\img\1073.png" alt="Avatar" style="width:100%;border-radius: 15px;height: 300px;">
+                        <div class="container" style="width: 110%;">
+                            <h4><b>Basic Python</b></h4>
+                            <p style="font-size: 10pt;">Learn what is Python from scratch along with other programming,
+                                data structure concepts and become familiar to test driven development...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="padding: 5px 30px 0px 30px;">
+                    <div class="card">
+                        <img src="\static\img\1073.jpg" style="width:100%;border-radius: 15px;height: 300px;">
+                        <div class="container" style="width: 110%;">
+                            <h4><b>Advance Python</b></h4>
+                            <p style="font-size: 10pt;">Learn Basic Python along with advance programming programming techniqies like creating your own web services, API's, Web Crawlers, become master of frameworks...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-4" style="padding: 5px 6% 0px 30px;">
+                    <div class="card">
+                        <img src="\static\img\1073.jpg" alt="Avatar" style="width:100%;border-radius: 15px;height: 300px;">
+                        <div class="container" style="width: 110%;">
+                            <h4><b>DevOps</b></h4>
+                            <p style="font-size: 10pt;">Architect & Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
     </section>
 
+<!--
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
@@ -172,7 +212,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <aside class="bg-dark">
         <div class="container text-center">
@@ -189,7 +229,7 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
                     <hr class="primary">
-                    <p>Setup Project. <br>Name Name</p>
+                    <p>For more Details <br>Phaneendra Gullapalli</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
@@ -197,7 +237,7 @@
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">me@email.com</a></p>
+                    <p><a href="mailto:your-email@your-domain.com">contact@phanig.com</a></p>
                 </div>
             </div>
         </div>

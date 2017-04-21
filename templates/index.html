@@ -51,7 +51,16 @@
                 <ul  class="nav navbar-nav navbar-right"
                      style="float: left !important; margin-left: 5%;">
                     <li>
-                        <a class="page-scroll" href="#about">Program</a>
+                        <a class="page-scroll dropdown-toggle" data-toggle="dropdown">Program
+                            <span class="caret"></span>
+                        </a>
+{#                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example#}
+{#                        <span class="caret"></span></button>#}
+                        <ul class="dropdown-menu" style="left: 0px">
+                          <li><a href="#">Basic Python</a></li>
+                          <li><a href="#">Advance Python</a></li>
+                          <li><a href="#">DevOps</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a class="page-scroll" href="#services">Resources</a>
